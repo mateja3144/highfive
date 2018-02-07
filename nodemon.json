@@ -1,0 +1,13 @@
+{
+    "verbose": true,
+    "ignore": [
+        ".git",
+        "node_modules/**/*"
+    ],
+    "exec": [
+        "yarn build:server && yarn start:server"
+    ],
+    "watch": [
+        "src/server"
+    ]
+}

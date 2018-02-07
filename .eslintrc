@@ -1,0 +1,22 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "plugins": [ "import", "react" ],
+    "extends": [ "standard", "plugin:react/recommended" ],
+    "globals": {
+        "fetch": true,
+        "Headers": true
+    },
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "import/no-unresolved": [2, { "caseSensitive": true }],
+        "semi": ["error", "always"],
+        "prefer-promise-reject-errors": 0
+    }
+}
