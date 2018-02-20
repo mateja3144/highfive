@@ -20,6 +20,7 @@ html, body {
     overflow-y: hidden;
     font-family: Roboto;
     font-size: 12px;
+    background-color: #1b7695;
 }
 
 :global(#app) {
