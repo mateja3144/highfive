@@ -63,6 +63,17 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(svg|png)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            name: '/image/[name].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     },
