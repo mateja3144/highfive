@@ -1,0 +1,13 @@
+.list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.button {
+    background-color: white;
+    color: blue;
+    border: none;
+
+}
