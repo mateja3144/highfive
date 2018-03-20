@@ -13,4 +13,12 @@ import App from './components/App';
 const store = createStore(reducers, {}, applyMiddleware(thunk));
 
 injectTapEventPlugin();
-ReactDOM.render(<App store={store} />, document.querySelector('#app'));
+ReactDOM.render(<App store={store} />, document.getElementById('app'));
+
+if (module.hot) {
+    module.hot.accept('./components/App', () => {
+        const NewApp = require('./components/App').default;
+
+        ReactDOM.render(<NewApp store={store} />, document.getElementById('app'));
+    });
+}

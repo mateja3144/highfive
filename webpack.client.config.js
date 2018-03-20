@@ -1,15 +1,16 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
-const env = process.env.NODE_ENV;
+const env = process.env.NODE_ENV || 'development';
 
 console.log([
     '\x1b[34m',
     '================================',
     `Building client for: ${env}`,
     '================================',
-    ''
+    '\x1b[0m'
 ].join('\n'));
 
 module.exports = {
@@ -21,8 +22,13 @@ module.exports = {
         filename: 'index.js'
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'assets/')
+        contentBase: path.resolve(__dirname, 'assets/'),
+        hot: true,
+        hotOnly: true,
+        inline: true,
+        clientLogLevel: 'warning'
     },
+    mode: env,
     resolve: {
         modules: [ path.resolve(__dirname, './src/client'), 'node_modules' ]
     },
@@ -62,11 +68,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: '../../assets/index.html',
             inject: 'head'
         }),
         new ScriptExtHtmlWebpackPlugin({
             defer: 'index.js'
-        })
+        }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };

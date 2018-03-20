@@ -19,6 +19,7 @@ module.exports = {
         filename: 'index.js'
     },
     target: 'node',
+    mode: env || 'development',
     externals: {
         express: 'commonjs express'
     },
