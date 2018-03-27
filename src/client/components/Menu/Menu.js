@@ -9,7 +9,7 @@ const buttons = [
     },
     {
         label: 'O nas',
-        link: '/onas'
+        link: '/o_nas'
     }
 ];
 
