@@ -9,6 +9,7 @@ import GalleryPage from '../GalleryPage';
 import TextsPage from '../TextsPage';
 import PressPack from '../PressPack';
 import ContactPage from '../ContactPage';
+import Footer from '../Footer';
 
 export const App = ({ store }) => (
     <Provider store={store}>
@@ -23,6 +24,7 @@ export const App = ({ store }) => (
                     <Route path='/kontakt' component={ContactPage} />
                     <Route path='/' component={HomePage} />
                 </Switch>
+                <Footer />
             </div>
         </BrowserRouter>
     </Provider>
