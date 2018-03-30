@@ -3,11 +3,20 @@
     list-style: none;
     margin: 0;
     display: flex;
+    
 }
 
 .button {
-    background-color: white;
-    color: blue;
+    color: #1b769e;
     border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background: white;
+}
 
+.button:hover {
+   background-color: rgb(255, 208, 0); 
 }
