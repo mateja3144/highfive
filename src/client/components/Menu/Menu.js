@@ -10,6 +10,10 @@ const buttons = [
     {
         label: 'O nas',
         link: '/o_nas'
+    },
+    {
+        label: 'Galeria',
+        link: '/galeria'
     }
 ];
 

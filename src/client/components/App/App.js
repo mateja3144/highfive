@@ -5,6 +5,7 @@ import Header from '../Header';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from '../HomePage';
 import AboutPage from '../AboutPage';
+import GalleryPage from '../GalleryPage';
 
 export const App = ({ store }) => (
     <Provider store={store}>
@@ -13,6 +14,7 @@ export const App = ({ store }) => (
                 <Header />
                 <Switch>
                     <Route path='/o_nas' component={AboutPage} />
+                    <Route path='/galeria' component={GalleryPage} />
                     <Route path='/' component={HomePage} />
                 </Switch>
             </div>
