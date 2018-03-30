@@ -18,6 +18,14 @@ const buttons = [
     {
         label: 'Teksty',
         link: '/teksty'
+    },
+    {
+        label: 'Press-Pack',
+        link: '/press-pack'
+    },
+    {
+        label: 'Kontakt',
+        link: '/kontakt'
     }
 ];
 
