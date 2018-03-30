@@ -3,7 +3,10 @@
     list-style: none;
     margin: 0;
     display: flex;
-    
+    transform:rotate(-20deg); 
+    -webkit-transform:rotate(-20deg); 
+    -moz-transform:rotate(-20deg); 
+    -o-transform:rotate(-20deg); 
 }
 
 .button {
@@ -18,5 +21,5 @@
 }
 
 .button:hover {
-   background-color: rgb(255, 208, 0); 
+   background-color: rgb(249, 167, 53); 
 }
