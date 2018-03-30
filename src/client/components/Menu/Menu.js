@@ -14,6 +14,10 @@ const buttons = [
     {
         label: 'Galeria',
         link: '/galeria'
+    },
+    {
+        label: 'Teksty',
+        link: '/teksty'
     }
 ];
 
