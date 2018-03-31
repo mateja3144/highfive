@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './style.css';
 
-export const PressPack = () => (
+export const PressPackPage = () => (
     <section className={style.section}>
-        <h2 className={style.title}>PressPack</h2>
+        <h2 className={style.title}>PressPackPage</h2>
     </section>
 );
 
-PressPack.propTypes = {
+PressPackPage.propTypes = {
 };
 
-export default PressPack;
+export default PressPackPage;

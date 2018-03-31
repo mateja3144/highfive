@@ -1,1 +1,1 @@
-export { default, PressPack } from './PressPack';
+export { default, PressPackPage } from './PressPackPage';
