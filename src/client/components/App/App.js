@@ -7,7 +7,7 @@ import HomePage from '../HomePage';
 import AboutPage from '../AboutPage';
 import GalleryPage from '../GalleryPage';
 import TextsPage from '../TextsPage';
-import PressPack from '../PressPack';
+import PressPackPage from '../PressPackPage';
 import ContactPage from '../ContactPage';
 import Footer from '../Footer';
 
@@ -20,7 +20,7 @@ export const App = ({ store }) => (
                     <Route path='/o_nas' component={AboutPage} />
                     <Route path='/galeria' component={GalleryPage} />
                     <Route path='/teksty' component={TextsPage} />
-                    <Route path='/press-pack' component={PressPack} />
+                    <Route path='/press-pack' component={PressPackPage} />
                     <Route path='/kontakt' component={ContactPage} />
                     <Route path='/' component={HomePage} />
                 </Switch>
