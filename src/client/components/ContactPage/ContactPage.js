@@ -12,7 +12,7 @@ export const ContactPage = () => (
             Dane kontaktowe:<br/>
             Tel: 123 456 789<br/>
             <a className={style.a} href="mailto:highfiveofficial1@gmail.com">highfiveofficial1@gmail.com</a><br/>
-            <a className={style.a} href="https://www.facebook.com/zespolhighfive/">FunPage Facebook</a><br/>
+            <a className={style.a} href="https://www.facebook.com/zespolhighfive/">Fanpage Facebook</a><br/>
         </article>
     </section>
 );
