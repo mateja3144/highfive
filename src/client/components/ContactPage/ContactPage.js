@@ -5,10 +5,11 @@ export const ContactPage = () => (
     <section className={style.section}>
         <h2 className={style.title}>Kontakt</h2>
         <article className={style.article}>
-            Jesteśmy otwarci na wszelkiego rodzaju współpracę.<br/>
-            Zapraszamy do kontaktu mailowego i telefonicznego.<br/>
-            Odwiedź nas również na naszym profilu na facebooku.
-            <br/><br/><br/><br/>
+            <div id="top" className={style.top}>
+                Jesteśmy otwarci na wszelkiego rodzaju współpracę.<br/>
+                Zapraszamy do kontaktu mailowego i telefonicznego.<br/>
+                Odwiedź nas również na naszym profilu na facebooku.
+            </div>
             Dane kontaktowe:<br/>
             Tel: 123 456 789<br/>
             <a className={style.a} href="mailto:highfiveofficial1@gmail.com">highfiveofficial1@gmail.com</a><br/>
