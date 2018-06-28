@@ -10,6 +10,22 @@ const buttons = [
     {
         label: 'O nas',
         link: '/o_nas'
+    },
+    {
+        label: 'Galeria',
+        link: '/galeria'
+    },
+    {
+        label: 'Teksty',
+        link: '/teksty'
+    },
+    {
+        label: 'Press-Pack',
+        link: '/press-pack'
+    },
+    {
+        label: 'Kontakt',
+        link: '/kontakt'
     }
 ];
 
@@ -22,8 +38,8 @@ const Menu = withRouter((props) => {
         <nav>
             <ul className={style.list}>
                 {buttons.map((row, index) => (
-                    <li className={style.button} key={index}>
-                        <button onClick={() => {
+                    <li key={index}>
+                        <button className={style.button} onClick={() => {
                             goTo(row.link);
                         }}>{row.label}</button>
                     </li>
