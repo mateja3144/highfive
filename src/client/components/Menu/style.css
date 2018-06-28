@@ -23,6 +23,7 @@
     -o-transform: skewX(-20deg);
     letter-spacing: 1px;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .button:hover {
