@@ -23,9 +23,9 @@ export const HomePage = () => (
     <section className={style.section}>
         <h2 className={style.title}>Gdzie gramy ?</h2>
         <div className={style.events}>
-            28 X 2017 ---- Gruba Blues ---- Chorzów<br/>
-            12 X 2017 ---- Dni Piekary Śląskich ---- Piekary Śląskie<br/>
-            28 X 2017 ---- Festyn Sportowy ---- Park Murckowski<br/>
+            {events.map((event) => (
+                <span>{event.date} ---- {event.place} ---- {event.city}<br/></span>
+            ))}
         </div>
     </section>
 );
