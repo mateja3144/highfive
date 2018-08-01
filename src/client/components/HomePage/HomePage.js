@@ -23,8 +23,8 @@ export const HomePage = () => (
     <section className={style.section}>
         <h2 className={style.title}>Gdzie gramy ?</h2>
         <div className={style.events}>
-            {events.map((event) => (
-                <span>{event.date} ---- {event.place} ---- {event.city}<br/></span>
+            {events.map((event, index) => (
+                <span key={index}>{event.date} ---- {event.place} ---- {event.city}<br/></span>
             ))}
         </div>
     </section>
