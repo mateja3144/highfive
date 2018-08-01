@@ -4,27 +4,27 @@ import { withRouter } from 'react-router-dom';
 
 const buttons = [
     {
-        label: 'Aktualności',
+        label: 'aktualności',
         link: '/'
     },
     {
-        label: 'O nas',
+        label: 'o nas',
         link: '/o_nas'
     },
     {
-        label: 'Galeria',
+        label: 'galeria',
         link: '/galeria'
     },
     {
-        label: 'Teksty',
+        label: 'teksty',
         link: '/teksty'
     },
     {
-        label: 'Press-Pack',
+        label: 'press-pack',
         link: '/press-pack'
     },
     {
-        label: 'Kontakt',
+        label: 'kontakt',
         link: '/kontakt'
     }
 ];

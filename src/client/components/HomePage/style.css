@@ -1,0 +1,14 @@
+.title {   
+    font-weight: 800;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.events {
+    font-size: 20px; 
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+}

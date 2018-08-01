@@ -4,9 +4,11 @@ import logo from '../../../../assets/image/logo.png';
 import Menu from '../Menu';
 
 export const Header = () => (
-    <header className={style.wrapper}>
-        <img className={style.logo} src={logo} />
-        <Menu />
+    <header className={style.header}>
+        <div className={style.container}>
+            <img className={style.logo} src={logo} />
+            <Menu />
+        </div>
     </header>
 );
 
